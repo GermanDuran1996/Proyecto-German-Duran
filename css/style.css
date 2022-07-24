@@ -28,7 +28,7 @@ nav {
 
 .tablaFutbol {
     background: linear-gradient(to right, blue , white);
-    /* background-color: aqua; */
+    background-color: aqua;
     border: 1px black solid;
     padding: 2px;
     margin: 5px;
@@ -38,7 +38,7 @@ nav {
 
 .reducido {
     background: linear-gradient(to right, blue , white);
-    /* background-color: aqua; */
+    background-color: aqua;
     border: 1px black solid;
     padding: 2px;
     margin: 5px;
@@ -47,7 +47,7 @@ nav {
 }
 .instanciaFinal {
     background: linear-gradient(to right, blue , white);
-    /* background-color: aqua; */
+    background-color: aqua;
     border: 1px black solid;
     padding: 2px;
     margin: 5px;
