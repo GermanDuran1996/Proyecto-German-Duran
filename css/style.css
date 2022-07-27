@@ -13,16 +13,16 @@ h3 {
 body {
     background-image: url(../img/56269936-resumen-de-plata-gris-de-fondo-centro-blanco-borde-más-oscuro-con-la-textura-de-la-esponja-de-cosech.webp);
 }
-
+/* 
 nav {
     display: flex;
     margin-left: 50px;
-    /* border: black solid;
+    border: black solid;
     padding: 2px;
     margin: 3px;
     width: 700px;
-    height: 20px; */
-}
+    height: 20px;
+} */
 
 /*pages - futbol*/
 
@@ -33,7 +33,7 @@ nav {
     padding: 2px;
     margin: 5px;
     width: 350px;
-    height: 840px;
+    height: 940px;
 }
 
 .reducido {
@@ -52,7 +52,7 @@ nav {
     padding: 2px;
     margin: 5px;
     width: 400px;
-    height: 600px;
+    height: 850px;
 }
 
 /* grid Futbol */
@@ -82,7 +82,7 @@ nav {
 
 /* media queres futbol */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     body {
         background-color: aqua;
     }
@@ -96,7 +96,7 @@ nav {
     
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     body {
         background-color: aquamarine;
     }
@@ -126,7 +126,7 @@ nav {
         "tabla final";
     }
     
-}
+} */
 
 
 
@@ -139,7 +139,7 @@ nav {
     padding: 1px;
     margin: 1px;
     width: 460px;
-    height: 700px;
+    height: 900px;
 }
 
 /* grid plantel profesinal */
@@ -164,14 +164,14 @@ nav {
 
 /* media queris plantel profesional */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .equipo {
         display: flex;
         flex-direction: column;    
     }   
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     .equipo {
         display: flex;
         flex-direction: column ;
@@ -195,7 +195,8 @@ nav {
         "plantel atlanta";
 }
 
-}
+} */
+
 /*Index*/
 
 .nuevosSocios {
@@ -205,7 +206,7 @@ nav {
     padding: 2px;
     margin: 5px;  
     width: 200px;
-    height: 400px;
+    height: 500px;
 }
 
 
@@ -216,7 +217,7 @@ nav {
     padding: 2px;
     margin: 5px;  
     width: 250px;
-    height: 400px;
+    height: 500px;
 
 }
 
@@ -241,7 +242,7 @@ nav {
 
 
 /* Media Queris Index */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .actualidad {
         display: flex;
         flex-direction: column;
@@ -249,7 +250,8 @@ nav {
     .googleMaps{
         display: none;
     }
-}
+} 
+/*
 @media screen and (min-width: 480px) {
     .actualidad {
         display: flex;
@@ -277,7 +279,8 @@ nav {
         display: block;
     }
 
-}
+} */
+
 /*Multimedia*/
 
 .llegoLaBanda {
@@ -287,7 +290,7 @@ nav {
     padding: 2px;
     margin: 10px;
     width: 210px;
-    height: 290px;
+    height: 350px;
 }
 
 .hojaEnBlanco {
@@ -297,7 +300,7 @@ nav {
     padding: 2px;
     margin: 10px;
     width: 270px;
-    height: 410px;
+    height: 470px;
 }
 
 /* grid Multimedia */
@@ -350,7 +353,7 @@ nav {
 /* Media Queries Multimedia  */
 
 /* llego */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     body {
         background-color: aqua;
     }
@@ -430,7 +433,7 @@ nav {
     padding: 2px;
     margin: 5px;
     width: 300px;
-    height: 240px;
+    height: 300px;
 }
 
 fieldset {
@@ -472,7 +475,7 @@ fieldset {
 
 /* Media Queries contacto  */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     body {
         background-color: aqua;
     }
@@ -487,7 +490,7 @@ fieldset {
     
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     body {
         background-color: aquamarine;
     }
@@ -517,7 +520,7 @@ fieldset {
         "escudo escudo";
     }
     
-}
+} */
 
 
 /* Futbol Juvenil */
@@ -528,8 +531,8 @@ fieldset {
     border: 1px black solid;
     padding: 2px;
     margin: 5px;
-    width: 350px;
-    height: 250px;
+    width: 380px;
+    height: 300px;
 }
 
 .nuevosProfesionales {
@@ -539,7 +542,7 @@ fieldset {
     padding: 2px;
     margin: 2px;
     width: 340px;
-    height: 230px;
+    height: 280px;
 }
 
 /* grid  Furbol Juvenil */
@@ -564,7 +567,7 @@ fieldset {
 
 /* media  queris futbol juvenil */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     body {
         background-color: aqua;
     }
@@ -578,7 +581,7 @@ fieldset {
     
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     body {
         background-color: aquamarine;
     }
@@ -607,4 +610,4 @@ fieldset {
         "tabla jugadores";
     }
     
-}
+} */
