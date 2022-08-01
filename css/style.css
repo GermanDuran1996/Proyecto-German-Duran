@@ -13,6 +13,9 @@ h3 {
 body {
     background-image: url(../img/56269936-resumen-de-plata-gris-de-fondo-centro-blanco-borde-más-oscuro-con-la-textura-de-la-esponja-de-cosech.webp);
 }
+
+#git
+
 /* 
 nav {
     display: flex;
@@ -23,6 +26,9 @@ nav {
     width: 700px;
     height: 20px;
 } */
+
+
+
 
 /*pages - futbol*/
 
@@ -128,6 +134,103 @@ nav {
     
 } */
 
+/* Contacto */
+
+.contacto {
+    background: linear-gradient(to right, lightblue ,white);
+    /* background-color: rgb(19, 153, 153); */
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+fieldset {
+    width: 350px;
+    height: 170px;
+}
+
+.tituloContacto {
+    text-align: center;    
+}
+
+/* Grid Contacto */
+
+.gridContacto {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "titulo  tituto"
+    "redes  contacto"
+    "escudo escudo";
+}
+
+.gridContacto h1 {
+    grid-area: titulo;
+}
+
+.gridContacto div {
+    grid-area: redes;
+}
+
+.gridContacto main {
+    grid-area: contacto;
+}
+
+.gridContacto img {
+    grid-area: escudo;
+}
+
+/* Media Queries contacto  */
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: aqua;
+    }
+
+    .gridContacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    
+}
+
+/* @media screen and (min-width: 480px) {
+    body {
+        background-color: aquamarine;
+    }
+    .gridContacto {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: 
+        "titulo  tituto"
+        "redes  contacto"
+        "escudo escudo";
+    }
+
+
+}
+
+@media screen and (min-width: 1124px) {
+    body {
+        background-color: blue;
+    }
+    .gridContacto {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: 
+        "titulo  tituto"
+        "redes  contacto"
+        "escudo escudo";
+    }
+    
+} */
 
 
 /*Plantel profecional*/
@@ -423,104 +526,6 @@ nav {
 }
 
 
-
-/* Contacto */
-
-.contacto {
-    background: linear-gradient(to right, lightblue ,white);
-    /* background-color: rgb(19, 153, 153); */
-    border: 1px black solid;
-    padding: 2px;
-    margin: 5px;
-    width: 300px;
-    height: 300px;
-}
-
-fieldset {
-    width: 350px;
-    height: 170px;
-}
-
-.tituloContacto {
-    text-align: center;    
-}
-
-/* Grid Contacto */
-
-.gridContacto {
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: min-content min-content min-content;
-    grid-template-areas: 
-    "titulo  tituto"
-    "redes  contacto"
-    "escudo escudo";
-}
-
-.gridContacto h1 {
-    grid-area: titulo;
-}
-
-.gridContacto div {
-    grid-area: redes;
-}
-
-.gridContacto main {
-    grid-area: contacto;
-}
-
-.gridContacto img {
-    grid-area: escudo;
-}
-
-/* Media Queries contacto  */
-
-@media screen and (max-width: 500px) {
-    body {
-        background-color: aqua;
-    }
-
-    .gridContacto {
-        display: flex;
-        flex-direction: column;
-    }
-
-    
-
-    
-}
-
-/* @media screen and (min-width: 480px) {
-    body {
-        background-color: aquamarine;
-    }
-    .gridContacto {
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "titulo  tituto"
-        "redes  contacto"
-        "escudo escudo";
-    }
-
-
-}
-
-@media screen and (min-width: 1124px) {
-    body {
-        background-color: blue;
-    }
-    .gridContacto {
-        display: grid;
-        grid-template-columns: 50% 25% 25%;
-        grid-template-rows: min-content min-content min-content;
-        grid-template-areas: 
-        "titulo  tituto"
-        "redes  contacto"
-        "escudo escudo";
-    }
-    
-} */
 
 
 /* Futbol Juvenil */
