@@ -1,0 +1,103 @@
+/*pages - futbol*/
+
+.tablaFutbol {
+    background: linear-gradient(to right, blue , white);
+    /*background-color: aqua;*/
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+    width: 350px;
+    height: 940px;
+}
+
+.reducido {
+    background: linear-gradient(to right, blue , white);
+    background-color: aqua;
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+    width: 400px;
+    height: 240px;
+}
+.instanciaFinal {
+    background: linear-gradient(to right, blue , white);
+    background-color: aqua;
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+    width: 400px;
+    height: 850px;
+}
+
+/* grid Futbol */
+
+.futbol {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: min-content min-content;
+    grid-template-areas: 
+    "tabla reducido"
+    "tabla final"
+    "tabla final";
+
+}
+
+.tablaFutbol {
+    grid-area: tabla;
+}
+
+.reducido {
+    grid-area: reducido;
+}
+
+.instanciaFinal {
+    grid-area: final;
+}
+
+/* media queres futbol */
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: aqua;
+    }
+    .futbol {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    
+}
+
+/* @media screen and (min-width: 480px) {
+    body {
+        background-color: aquamarine;
+    }
+    .futbol {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: 
+        "tabla reducido"
+        "tabla reducido"
+        "final";
+    }
+
+
+}
+
+@media screen and (min-width: 1124px) {
+    body {
+        background-color: blue;
+    }
+    .futbol {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: min-content min-content;
+        grid-template-areas: 
+        "tabla reducido"
+        "tabla final"
+        "tabla final";
+    }
+    
+} */

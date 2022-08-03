@@ -1,0 +1,88 @@
+/* Contacto */
+.contacto {
+    background: linear-gradient(to right, lightblue, white);
+    /* background-color: rgb(19, 153, 153); */
+    border: 1px black solid;
+    padding: 2px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: height 0.5s , width 0.8;
+  }
+
+  
+
+  .contacto:hover {
+    background-color: azure;
+    height: 400px;
+    width: 400px;
+  }
+
+
+  fieldset {
+    width: 350px;
+    height: 170px; }
+  
+  .tituloContacto {
+    text-align: center; }
+  
+  /* Grid Contacto */
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "titulo  tituto"
+   "redes  contacto"
+   "escudo escudo"; }
+  
+  .gridContacto h1 {
+    grid-area: titulo; }
+  
+  .gridContacto div {
+    grid-area: redes; }
+  
+  .gridContacto main {
+    grid-area: contacto; }
+  
+  .gridContacto img {
+    grid-area: escudo; }
+  
+  /* Media Queries contacto  */
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: aqua; }
+    .gridContacto {
+      display: flex;
+      flex-direction: column; } }
+  
+  /* @media screen and (min-width: 480px) {
+      body {
+          background-color: aquamarine;
+      }
+      .gridContacto {
+          display: flex;
+          flex-direction: column;
+          grid-template-areas: 
+          "titulo  tituto"
+          "redes  contacto"
+          "escudo escudo";
+      }
+  
+  
+  }
+  
+  @media screen and (min-width: 1124px) {
+      body {
+          background-color: blue;
+      }
+      .gridContacto {
+          display: grid;
+          grid-template-columns: 50% 25% 25%;
+          grid-template-rows: min-content min-content min-content;
+          grid-template-areas: 
+          "titulo  tituto"
+          "redes  contacto"
+          "escudo escudo";
+      }
+      
+  } */

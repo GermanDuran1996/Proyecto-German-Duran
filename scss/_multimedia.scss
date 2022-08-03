@@ -1,1 +1,140 @@
+/*Multimedia*/
 
+.llegoLaBanda {
+    background: linear-gradient(to right, blue , white);
+    /* background-color: wheat; */
+    border: 1px black solid;
+    padding: 2px;
+    margin: 10px;
+    width: 210px;
+    height: 350px;
+}
+
+.hojaEnBlanco {
+    background: linear-gradient(to right, blue , white);
+    /* background-color: wheat; */
+    border: 1px black solid;
+    padding: 2px;
+    margin: 10px;
+    width: 270px;
+    height: 470px;
+}
+
+/* grid Multimedia */
+
+.cancionesLlego {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: min-content min-content;
+    grid-template-areas: 
+    "entradaLlego entradaLlego"
+    "video letra"
+    "video letra";
+}
+
+.cancionesLlego h2 {
+    grid-area: entradaLlego;
+}
+
+.cancionesLlego iframe {
+    grid-area: video;
+}
+
+.cancionesLlego div {
+    grid-area: letra;
+}
+
+
+.hojaEnBlancoL {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content ;
+    grid-template-areas: 
+    "hoja hoja"
+    "videoHoja hojaEnBlancoL"
+    "videoHoja hojaEnBlancoL";
+}
+
+.hojaEnBlancoL div {
+    grid-area: hojaEnBlancoL;
+}
+
+.hojaEnBlancoL h2 {
+    grid-area: hoja;
+}
+
+.hojaEnBlancoL iframe {
+    grid-area: videoHoja;
+}
+
+/* Media Queries Multimedia  */
+
+/* llego */
+@media screen and (max-width: 500px) {
+    body {
+        background-color: aqua;
+    }
+    .cancionesLlego {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .hojaEnBlancoL {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: aquamarine;
+    }
+    .cancionesLlego {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: 
+        "entradaLlego entradaLlego"
+        "video letra"
+        "video letra";
+    }
+
+    .hojaEnBlancoL {
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: 
+        "hoja hoja"
+        "videoHoja hojaEnBlancoL"
+        "videoHoja hojaEnBlancoL";
+
+    }
+
+}
+
+@media screen and (min-width: 1124px) {
+    body {
+        background-color: blue;
+    }
+    .cancionesLlego {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: min-content min-content;
+        grid-template-areas: 
+        "entradaLlego entradaLlego"
+        "video letra"
+        "video letra";
+    }
+
+    .hojaEnBlancoL {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: min-content min-content ;
+        grid-template-areas: 
+        "hoja hoja"
+        "videoHoja hojaEnBlancoL"
+        "videoHoja hojaEnBlancoL";
+
+    }
+    
+}

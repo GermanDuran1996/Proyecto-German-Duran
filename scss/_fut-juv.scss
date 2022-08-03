@@ -1,0 +1,88 @@
+/* Futbol Juvenil */
+
+.categoriasInferiores {
+    background: linear-gradient(to right, blue , white);
+   /* background-color: aqua; */
+   border: 1px black solid;
+   padding: 2px;
+   margin: 5px;
+   width: 380px;
+   height: 300px;
+}
+
+.nuevosProfesionales {
+    background: linear-gradient(to right, blue , white);
+   /* background-color: aqua; */
+   border: 1px black solid;
+   padding: 2px;
+   margin: 2px;
+   width: 340px;
+   height: 280px;
+}
+
+/* grid  Furbol Juvenil */
+
+.categorias {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: min-content min-content;
+   grid-template-areas: 
+   "tabla jugadores"
+   "tabla jugadores";
+
+}
+
+.categoriasInferiores {
+   grid-area: tabla;
+}
+
+.nuevosProfesionales {
+   grid-area: jugadores;
+}
+
+/* media  queris futbol juvenil */
+
+@media screen and (max-width: 500px) {
+   body {
+       background-color: aqua;
+   }
+
+   .categorias {
+       display: flex;
+       flex-direction: column;
+   }
+  
+
+   
+}
+
+/* @media screen and (min-width: 480px) {
+   body {
+       background-color: aquamarine;
+   }
+   .categorias {
+       display: flex;
+       flex-direction: column;
+       grid-template-areas: 
+       "tabla jugadores"
+       "tabla jugadores";
+   }
+
+
+
+}
+
+@media screen and (min-width: 1124px) {
+   body {
+       background-color: blue;
+   }
+   .categorias {
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: min-content min-content;
+       grid-template-areas: 
+       "tabla jugadores"
+       "tabla jugadores";
+   }
+   
+} */

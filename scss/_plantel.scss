@@ -1,0 +1,66 @@
+/*Plantel profecional*/
+
+.plantel {
+    background: linear-gradient(to right, blue , white);
+    /* background-color: aqua; */
+    border: 1px black solid;
+    padding: 1px;
+    margin: 1px;
+    width: 460px;
+    height: 900px;
+}
+
+/* grid plantel profesinal */
+
+.equipo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: min-content min-content;
+    grid-template-areas:
+    "plantel atlanta"
+    "plantel atlanta"
+    "plantel atlanta";
+}
+
+.plantel {
+    grid-area: plantel;
+}
+
+.atlanta {
+    grid-area: atlanta;
+}
+
+/* media queris plantel profesional */
+
+@media screen and (max-width: 500px) {
+    .equipo {
+        display: flex;
+        flex-direction: column;    
+    }   
+}
+
+/* @media screen and (min-width: 480px) {
+    .equipo {
+        display: flex;
+        flex-direction: column ;
+        grid-auto-rows: min-content ;
+        grid-template-areas:
+        "plantel"
+        "plantel"
+        "atlanta";
+}
+
+}
+
+@media screen and (min-width: 1124px) {
+    .equipo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: min-content min-content;
+        grid-template-areas:
+        "plantel atlanta"
+        "plantel atlanta"
+        "plantel atlanta";
+}
+
+} */
