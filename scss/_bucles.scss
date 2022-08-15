@@ -1,0 +1,20 @@
+@for $i from 2 to 7 {
+    h#{$i} {
+        font-size: 2rem;
+    }
+    
+}
+
+/* $i = 2
+$i = 3
+$i = 4
+$i = 5
+$i = 6 */
+
+$colores: 'pink', 'green', 'black';
+
+@each $color in $colores {
+    .#{$color} {
+        color: #{color};
+    }
+}

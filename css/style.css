@@ -1,29 +1,146 @@
-@charset "UTF-8";
 h1 {
-  color: white; }
+  color: black; }
 
 h2 {
-  color: white; }
+  color: black; }
 
 h3 {
+  color: black; }
+
+/*
+body {
+    background-image: url(../img/frytrhg.jpg);
+}
+*/
+footer {
+  color: violet; }
+
+header {
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header h1 {
+    background-color: white; }
+  header nav {
+    background-color: antiquewhite; }
+  header li {
+    display: inline-block; }
+  header a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px; }
+    header a:hover {
+      background-color: white; }
+
+/* 
+nav {
+    display: flex;
+    margin-left: 50px;
+    border: black solid;
+    padding: 2px;
+    margin: 3px;
+    width: 700px;
+    height: 20px;
+} */
+/* Contacto */
+legend {
   color: white; }
 
-body {
-  background-image: url(../img/frytrhg.jpg); }
+label {
+  color: aqua; }
 
-footer {
-  color: violet;
-}
+.contacto {
+  background: linear-gradient(to right, lightblue, white);
+  /* background-color: rgb(19, 153, 153); */
+  border: 1px black solid;
+  padding: 2px;
+  margin: 5px;
+  width: 300px;
+  height: 300px;
+  transition: height 0.5s , width 0.8; }
 
+.contacto:hover {
+  background-color: azure;
+  height: 400px;
+  width: 400px; }
+
+fieldset {
+  width: 350px;
+  height: 170px; }
+
+.tituloContacto {
+  text-align: center; }
+
+/* Grid Contacto */
+.gridContacto {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas: "titulo  tituto" "redes  contacto" "escudo escudo"; }
+
+.gridContacto h1 {
+  grid-area: titulo; }
+
+.gridContacto div {
+  grid-area: redes; }
+
+.gridContacto main {
+  grid-area: contacto; }
+
+.gridContacto img {
+  grid-area: escudo; }
+
+/* Media Queries contacto  */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: aqua; }
+  .gridContacto {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: "titulo titulo" "redes contacto"; } }
+
+/* @media screen and (min-width: 480px) {
+      body {
+          background-color: aquamarine;
+      }
+      .gridContacto {
+          display: flex;
+          flex-direction: column;
+          grid-template-areas: 
+          "titulo  tituto"
+          "redes  contacto"
+          "escudo escudo";
+      }
+  
+  
+  }
+  
+  @media screen and (min-width: 1124px) {
+      body {
+          background-color: blue;
+      }
+      .gridContacto {
+          display: grid;
+          grid-template-columns: 50% 25% 25%;
+          grid-template-rows: min-content min-content min-content;
+          grid-template-areas: 
+          "titulo  tituto"
+          "redes  contacto"
+          "escudo escudo";
+      }
+      
+  } */
+/*pages - futbol*/
 .tablaFutbol {
   background: linear-gradient(to right, blue, white);
-  background-color: aqua;
+  /*background-color: aqua;*/
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
   width: 350px;
-  height: 940px; 
-}
+  height: 940px; }
 
 .reducido {
   background: linear-gradient(to right, blue, white);
@@ -48,9 +165,7 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: min-content min-content;
-  grid-template-areas: "tabla reducido"
- "tabla final"
- "tabla final"; }
+  grid-template-areas: "tabla reducido" "tabla final" "tabla final"; }
 
 .tablaFutbol {
   grid-area: tabla; }
@@ -100,83 +215,6 @@ footer {
     }
     
 } */
-/* Contacto */
-.contacto {
-  background: linear-gradient(to right, lightblue, white);
-  /* background-color: rgb(19, 153, 153); */
-  border: 1px black solid;
-  padding: 2px;
-  margin: 5px;
-  width: 300px;
-  height: 300px; }
-
-fieldset {
-  width: 350px;
-  height: 170px; }
-
-.tituloContacto {
-  text-align: center; }
-
-/* Grid Contacto */
-.gridContacto {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: min-content min-content min-content;
-  grid-template-areas: "titulo  tituto"
- "redes  contacto"
- "escudo escudo"; }
-
-.gridContacto h1 {
-  grid-area: titulo; }
-
-.gridContacto div {
-  grid-area: redes; }
-
-.gridContacto main {
-  grid-area: contacto; }
-
-.gridContacto img {
-  grid-area: escudo; }
-
-/* Media Queries contacto  */
-@media screen and (max-width: 500px) {
-  body {
-    background-color: aqua; }
-  .gridContacto {
-    display: flex;
-    flex-direction: column; } }
-
-/* @media screen and (min-width: 480px) {
-    body {
-        background-color: aquamarine;
-    }
-    .gridContacto {
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "titulo  tituto"
-        "redes  contacto"
-        "escudo escudo";
-    }
-
-
-}
-
-@media screen and (min-width: 1124px) {
-    body {
-        background-color: blue;
-    }
-    .gridContacto {
-        display: grid;
-        grid-template-columns: 50% 25% 25%;
-        grid-template-rows: min-content min-content min-content;
-        grid-template-areas: 
-        "titulo  tituto"
-        "redes  contacto"
-        "escudo escudo";
-    }
-    
-} */
 /*Plantel profecional*/
 .plantel {
   background: linear-gradient(to right, blue, white);
@@ -188,13 +226,11 @@ fieldset {
   height: 900px; }
 
 /* grid plantel profesinal */
-.equipo {
+.equipo, .plantel {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: min-content min-content;
-  grid-template-areas: "plantel atlanta"
- "plantel atlanta"
- "plantel atlanta"; }
+  grid-template-areas: "plantel atlanta" "plantel atlanta" "plantel atlanta"; }
 
 .plantel {
   grid-area: plantel; }
@@ -204,7 +240,7 @@ fieldset {
 
 /* media queris plantel profesional */
 @media screen and (max-width: 500px) {
-  .equipo {
+  .equipo, .plantel {
     display: flex;
     flex-direction: column; } }
 
@@ -233,6 +269,227 @@ fieldset {
 }
 
 } */
+/*Multimedia*/
+.llegoLaBanda {
+  background: linear-gradient(to right, blue, white);
+  /* background-color: wheat; */
+  border: 1px black solid;
+  padding: 2px;
+  margin: 10px;
+  width: 210px;
+  height: 350px; }
+
+.hojaEnBlanco {
+  background: linear-gradient(to right, blue, white);
+  /* background-color: wheat; */
+  border: 1px black solid;
+  padding: 2px;
+  margin: 10px;
+  width: 270px;
+  height: 470px; }
+
+/* grid Multimedia */
+.cancionesLlego {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: min-content min-content;
+  grid-template-areas: "entradaLlego entradaLlego" "video letra" "video letra"; }
+
+.cancionesLlego h2 {
+  grid-area: entradaLlego; }
+
+.cancionesLlego iframe {
+  grid-area: video; }
+
+.cancionesLlego div {
+  grid-area: letra; }
+
+.hojaEnBlancoL {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: min-content min-content;
+  grid-template-areas: "hoja hoja" "videoHoja hojaEnBlancoL" "videoHoja hojaEnBlancoL"; }
+
+.hojaEnBlancoL div {
+  grid-area: hojaEnBlancoL; }
+
+.hojaEnBlancoL h2 {
+  grid-area: hoja; }
+
+.hojaEnBlancoL iframe {
+  grid-area: videoHoja; }
+
+/* Media Queries Multimedia  */
+/* llego */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: aqua; }
+  .cancionesLlego {
+    display: flex;
+    flex-direction: column; }
+  .hojaEnBlancoL {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: aquamarine; }
+  .cancionesLlego {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: "entradaLlego entradaLlego" "video letra" "video letra"; }
+  .hojaEnBlancoL {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: "hoja hoja" "videoHoja hojaEnBlancoL" "videoHoja hojaEnBlancoL"; } }
+
+@media screen and (min-width: 1124px) {
+  body {
+    background-color: blue; }
+  .cancionesLlego {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: min-content min-content;
+    grid-template-areas: "entradaLlego entradaLlego" "video letra" "video letra"; }
+  .hojaEnBlancoL {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "hoja hoja" "videoHoja hojaEnBlancoL" "videoHoja hojaEnBlancoL"; } }
+
+/* Futbol Juvenil */
+.categoriasInferiores {
+  background: linear-gradient(to right, blue, white);
+  /* background-color: aqua; */
+  border: 1px black solid;
+  padding: 2px;
+  margin: 5px;
+  width: 380px;
+  height: 300px; }
+
+.nuevosProfesionales {
+  background: linear-gradient(to right, blue, white);
+  /* background-color: aqua; */
+  border: 1px black solid;
+  padding: 2px;
+  margin: 2px;
+  width: 340px;
+  height: 340px; }
+
+/* grid  Furbol Juvenil */
+.categorias {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: min-content min-content;
+  grid-template-areas: "tabla jugadores" "tabla jugadores"; }
+
+.categoriasInferiores {
+  grid-area: tabla; }
+
+.nuevosProfesionales {
+  grid-area: jugadores; }
+
+/* media  queris futbol juvenil */
+@media screen and (max-width: 770px) {
+  body {
+    background-color: aqua; }
+  .categorias {
+    display: flex;
+    flex-direction: column; } }
+
+/* @media screen and (min-width: 790px) {
+   body {
+       background-color: aquamarine;
+   }
+   .categorias {
+       display: flex;
+       flex-direction: column;
+       grid-template-areas: 
+       "tabla"
+       "jugadores";
+   }
+
+
+
+}
+
+/*
+@media screen and (min-width: 1124px) {
+   body {
+       background-color: blue;
+   }
+   .categorias {
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: min-content min-content;
+       grid-template-areas: 
+       "tabla jugadores"
+       "tabla jugadores";
+   }
+   
+} */
+body {
+  background-color: gray; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 2rem; }
+
+/* $i = 2
+$i = 3
+$i = 4
+$i = 5
+$i = 6 */
+.pink {
+  color: color; }
+
+.green {
+  color: color; }
+
+.black {
+  color: color; }
+
+.facebook {
+  color: green; }
+
+.instagram {
+  color: blue; }
+
+.twitter {
+  color: yellow; }
+
+.gridContacto {
+  background-color: red;
+  font-size: 15px; }
+
+.equipo, .plantel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: right; }
+
+.plantel {
+  font-size: 10px; }
+
+.parrafosConEstilo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  text-align: center; }
+
+.parrafosNuevos {
+  font-size: 50px;
+  text-align: right; }
+
 /*Index*/
 .nuevosSocios {
   background: linear-gradient(to right, blue, white);
@@ -241,7 +498,7 @@ fieldset {
   padding: 2px;
   margin: 5px;
   width: 200px;
-  height: 500px; }
+  height: 540px; }
 
 .fechas {
   background: linear-gradient(to right, blue, white);
@@ -256,8 +513,7 @@ fieldset {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: min-content min-content;
-  grid-template-areas: "partidos socios"
- "partidos socios"; }
+  grid-template-areas: "partidos socios" "partidos socios"; }
 
 .fechas {
   grid-area: partidos; }
@@ -301,175 +557,4 @@ fieldset {
         display: block;
     }
 
-} */
-/*Multimedia*/
-.llegoLaBanda {
-  background: linear-gradient(to right, blue, white);
-  /* background-color: wheat; */
-  border: 1px black solid;
-  padding: 2px;
-  margin: 10px;
-  width: 210px;
-  height: 350px; }
-
-.hojaEnBlanco {
-  background: linear-gradient(to right, blue, white);
-  /* background-color: wheat; */
-  border: 1px black solid;
-  padding: 2px;
-  margin: 10px;
-  width: 270px;
-  height: 470px; }
-
-/* grid Multimedia */
-.cancionesLlego {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: min-content min-content;
-  grid-template-areas: "entradaLlego entradaLlego"
- "video letra"
- "video letra"; }
-
-.cancionesLlego h2 {
-  grid-area: entradaLlego; }
-
-.cancionesLlego iframe {
-  grid-area: video; }
-
-.cancionesLlego div {
-  grid-area: letra; }
-
-.hojaEnBlancoL {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: min-content min-content;
-  grid-template-areas: "hoja hoja"
- "videoHoja hojaEnBlancoL"
- "videoHoja hojaEnBlancoL"; }
-
-.hojaEnBlancoL div {
-  grid-area: hojaEnBlancoL; }
-
-.hojaEnBlancoL h2 {
-  grid-area: hoja; }
-
-.hojaEnBlancoL iframe {
-  grid-area: videoHoja; }
-
-/* Media Queries Multimedia  */
-/* llego */
-@media screen and (max-width: 500px) {
-  body {
-    background-color: aqua; }
-  .cancionesLlego {
-    display: flex;
-    flex-direction: column; }
-  .hojaEnBlancoL {
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (min-width: 480px) {
-  body {
-    background-color: aquamarine; }
-  .cancionesLlego {
-    display: flex;
-    flex-direction: column;
-    grid-template-areas: "entradaLlego entradaLlego"
- "video letra"
- "video letra"; }
-  .hojaEnBlancoL {
-    display: flex;
-    flex-direction: column;
-    grid-template-areas: "hoja hoja"
- "videoHoja hojaEnBlancoL"
- "videoHoja hojaEnBlancoL"; } }
-
-@media screen and (min-width: 1124px) {
-  body {
-    background-color: blue; }
-  .cancionesLlego {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: min-content min-content;
-    grid-template-areas: "entradaLlego entradaLlego"
- "video letra"
- "video letra"; }
-  .hojaEnBlancoL {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content;
-    grid-template-areas: "hoja hoja"
- "videoHoja hojaEnBlancoL"
- "videoHoja hojaEnBlancoL"; } }
-
-/* Futbol Juvenil */
-.categoriasInferiores {
-  background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
-  border: 1px black solid;
-  padding: 2px;
-  margin: 5px;
-  width: 380px;
-  height: 300px; }
-
-.nuevosProfesionales {
-  background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
-  border: 1px black solid;
-  padding: 2px;
-  margin: 2px;
-  width: 340px;
-  height: 280px; }
-
-/* grid  Furbol Juvenil */
-.categorias {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: min-content min-content;
-  grid-template-areas: "tabla jugadores"
- "tabla jugadores"; }
-
-.categoriasInferiores {
-  grid-area: tabla; }
-
-.nuevosProfesionales {
-  grid-area: jugadores; }
-
-/* media  queris futbol juvenil */
-@media screen and (max-width: 500px) {
-  body {
-    background-color: aqua; }
-  .categorias {
-    display: flex;
-    flex-direction: column; } }
-
-/* @media screen and (min-width: 480px) {
-    body {
-        background-color: aquamarine;
-    }
-    .categorias {
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "tabla jugadores"
-        "tabla jugadores";
-    }
-
-
-
-}
-
-@media screen and (min-width: 1124px) {
-    body {
-        background-color: blue;
-    }
-    .categorias {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: min-content min-content;
-        grid-template-areas: 
-        "tabla jugadores"
-        "tabla jugadores";
-    }
-    
 } */

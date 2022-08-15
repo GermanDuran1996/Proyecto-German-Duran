@@ -1,0 +1,18 @@
+@mixin parrafos {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;    
+}
+
+.parrafosConEstilo {
+    @include parrafos;
+}
+
+@mixin parrafosconParametros($size, $aliineacion) {
+    font-size: $size;
+    text-align: $aliineacion;
+}
+
+.parrafosNuevos {
+    @include parrafosconParametros(50px,right )
+}

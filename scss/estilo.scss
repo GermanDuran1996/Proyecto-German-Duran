@@ -1,22 +1,59 @@
+
+
 h1 {
-    color: white;
+    color: black;
 }
 
 h2 {
-    color: white;
+    color: black;
 }
 
 h3 {
-    color: white;
+    color: black;
 }
-
+/*
 body {
     background-image: url(../img/frytrhg.jpg);
 }
+*/
 
 footer {
     color: violet ;
 } 
+
+header {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        background-color: white
+    }
+
+    nav {
+        background-color: antiquewhite
+    }
+
+        li {
+            display: inline-block;
+        }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 10px;
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+
+
+}
+
+
 
 /* 
 nav {
@@ -39,11 +76,17 @@ nav {
 
 @import "fut-juv";
 
+@import "variables";
 
+@import "condicionales" ;
 
+@import "bucles";
 
+@import "maps";
 
+@import "extend";
 
+@import "mixin";
 
 /*Index*/
 
@@ -54,7 +97,7 @@ nav {
     padding: 2px;
     margin: 5px;  
     width: 200px;
-    height: 500px;
+    height: 540px;
 }
 
 

@@ -1,4 +1,13 @@
 /* Contacto */
+
+legend {
+  color: white;
+}
+
+label{
+  color: aqua ;
+}
+
 .contacto {
     background: linear-gradient(to right, lightblue, white);
     /* background-color: rgb(19, 153, 153); */
@@ -48,12 +57,17 @@
     grid-area: escudo; }
   
   /* Media Queries contacto  */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     body {
       background-color: aqua; }
     .gridContacto {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column; 
+      grid-template-areas: 
+      "titulo titulo"
+      "redes contacto";
+    } 
+    }
   
   /* @media screen and (min-width: 480px) {
       body {
