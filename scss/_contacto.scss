@@ -1,11 +1,20 @@
 /* Contacto */
 
 legend {
-  color: white;
+  color: black;
 }
 
 label{
-  color: aqua ;
+  color: black ;
+}
+
+.formulario {
+  background: linear-gradient(to right, lightblue, white) ;
+  border: 1px black solid;
+  padding: 2px;
+  margin: 5px;
+  width: 400px;
+  height: 300px;
 }
 
 .contacto {
@@ -28,9 +37,6 @@ label{
   }
 
 
-  fieldset {
-    width: 350px;
-    height: 170px; }
   
   .tituloContacto {
     text-align: center; }
@@ -41,8 +47,8 @@ label{
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: min-content min-content min-content;
     grid-template-areas: "titulo  tituto"
-   "redes  contacto"
-   "escudo escudo"; }
+   "contacto  formu"
+   "contacto formu"; }
   
   .gridContacto h1 {
     grid-area: titulo; }
@@ -55,6 +61,10 @@ label{
   
   .gridContacto img {
     grid-area: escudo; }
+
+  .formulario {
+    grid-area: formu;
+  }
   
   /* Media Queries contacto  */
   @media screen and (max-width: 600px) {
@@ -65,11 +75,12 @@ label{
       flex-direction: column; 
       grid-template-areas: 
       "titulo titulo"
-      "redes contacto";
+      "contacto formu"
+      "contacto formu"
     } 
     }
   
-  /* @media screen and (min-width: 480px) {
+   @media screen and (min-width: 600px) {
       body {
           background-color: aquamarine;
       }
@@ -78,14 +89,14 @@ label{
           flex-direction: column;
           grid-template-areas: 
           "titulo  tituto"
-          "redes  contacto"
-          "escudo escudo";
+          "contacto  formu"
+          "contacto formu";
       }
   
   
   }
   
-  @media screen and (min-width: 1124px) {
+/*  @media screen and (min-width: 1124px) {
       body {
           background-color: blue;
       }

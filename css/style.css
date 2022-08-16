@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   color: black; }
 
@@ -7,13 +8,8 @@ h2 {
 h3 {
   color: black; }
 
-/*
 body {
-    background-image: url(../img/frytrhg.jpg);
-}
-*/
-footer {
-  color: violet; }
+  background-image: url(../img/56269936-resumen-de-plata-gris-de-fondo-centro-blanco-borde-más-oscuro-con-la-textura-de-la-esponja-de-cosech.webp); }
 
 header {
   background-color: none;
@@ -21,7 +17,7 @@ header {
   align-items: center;
   justify-content: center; }
   header h1 {
-    background-color: white; }
+    background-color: black; }
   header nav {
     background-color: antiquewhite; }
   header li {
@@ -46,10 +42,18 @@ nav {
 } */
 /* Contacto */
 legend {
-  color: white; }
+  color: black; }
 
 label {
-  color: aqua; }
+  color: black; }
+
+.formulario {
+  background: linear-gradient(to right, lightblue, white);
+  border: 1px black solid;
+  padding: 2px;
+  margin: 5px;
+  width: 400px;
+  height: 300px; }
 
 .contacto {
   background: linear-gradient(to right, lightblue, white);
@@ -66,10 +70,6 @@ label {
   height: 400px;
   width: 400px; }
 
-fieldset {
-  width: 350px;
-  height: 170px; }
-
 .tituloContacto {
   text-align: center; }
 
@@ -78,7 +78,7 @@ fieldset {
   display: grid;
   grid-template-columns: 50% 25% 25%;
   grid-template-rows: min-content min-content min-content;
-  grid-template-areas: "titulo  tituto" "redes  contacto" "escudo escudo"; }
+  grid-template-areas: "titulo  tituto" "contacto  formu" "contacto formu"; }
 
 .gridContacto h1 {
   grid-area: titulo; }
@@ -92,6 +92,9 @@ fieldset {
 .gridContacto img {
   grid-area: escudo; }
 
+.formulario {
+  grid-area: formu; }
+
 /* Media Queries contacto  */
 @media screen and (max-width: 600px) {
   body {
@@ -99,25 +102,17 @@ fieldset {
   .gridContacto {
     display: flex;
     flex-direction: column;
-    grid-template-areas: "titulo titulo" "redes contacto"; } }
+    grid-template-areas: "titulo titulo" "contacto formu" "contacto formu"; } }
 
-/* @media screen and (min-width: 480px) {
-      body {
-          background-color: aquamarine;
-      }
-      .gridContacto {
-          display: flex;
-          flex-direction: column;
-          grid-template-areas: 
-          "titulo  tituto"
-          "redes  contacto"
-          "escudo escudo";
-      }
-  
-  
-  }
-  
-  @media screen and (min-width: 1124px) {
+@media screen and (min-width: 600px) {
+  body {
+    background-color: aquamarine; }
+  .gridContacto {
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: "titulo  tituto" "contacto  formu" "contacto formu"; } }
+
+/*  @media screen and (min-width: 1124px) {
       body {
           background-color: blue;
       }
@@ -177,7 +172,7 @@ fieldset {
   grid-area: final; }
 
 /* media queres futbol */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 830px) {
   body {
     background-color: aqua; }
   .futbol {
@@ -226,7 +221,7 @@ fieldset {
   height: 900px; }
 
 /* grid plantel profesinal */
-.equipo, .plantel {
+.equipo {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: min-content min-content;
@@ -239,8 +234,8 @@ fieldset {
   grid-area: atlanta; }
 
 /* media queris plantel profesional */
-@media screen and (max-width: 500px) {
-  .equipo, .plantel {
+@media screen and (max-width: 930px) {
+  .equipo {
     display: flex;
     flex-direction: column; } }
 
@@ -428,68 +423,6 @@ fieldset {
    }
    
 } */
-body {
-  background-color: gray; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h5 {
-  font-size: 2rem; }
-
-h6 {
-  font-size: 2rem; }
-
-/* $i = 2
-$i = 3
-$i = 4
-$i = 5
-$i = 6 */
-.pink {
-  color: color; }
-
-.green {
-  color: color; }
-
-.black {
-  color: color; }
-
-.facebook {
-  color: green; }
-
-.instagram {
-  color: blue; }
-
-.twitter {
-  color: yellow; }
-
-.gridContacto {
-  background-color: red;
-  font-size: 15px; }
-
-.equipo, .plantel {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: right; }
-
-.plantel {
-  font-size: 10px; }
-
-.parrafosConEstilo {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  text-align: center; }
-
-.parrafosNuevos {
-  font-size: 50px;
-  text-align: right; }
-
 /*Index*/
 .nuevosSocios {
   background: linear-gradient(to right, blue, white);
