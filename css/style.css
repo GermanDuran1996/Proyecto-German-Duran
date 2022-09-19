@@ -8,7 +8,8 @@ h3 {
   color: black; }
 
 body {
-  background-image: url(../img/esponja-de-cosech.png); }
+  background-image: url(../img/esponja-de-cosech.png);
+  font-family: arial, Verdana, Geneva, Tahoma, sans-serif; }
 
 header {
   background-color: none;
@@ -42,17 +43,26 @@ label {
   padding: 2px;
   margin: 5px;
   width: 400px;
-  height: 300px; }
+  height: 300px;
+  box-shadow: 10px 5px 5px black; }
 
 .contacto {
   background: linear-gradient(to right, lightblue, white);
-  /* background-color: rgb(19, 153, 153); */
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
   width: 300px;
   height: 300px;
-  transition: height 0.5s , width 0.8; }
+  box-shadow: 10px 5px 5px black; }
+
+.formulario2 {
+  background: linear-gradient(to right, lightblue, white);
+  border: 1px black solid;
+  padding: 2px;
+  margin: 5px;
+  width: 450px;
+  height: 600px;
+  box-shadow: 10px 5px 5px black; }
 
 .contacto:hover {
   background-color: azure;
@@ -65,9 +75,9 @@ label {
 /* Grid Contacto */
 .gridContacto {
   display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: min-content min-content min-content;
-  grid-template-areas: "titulo  tituto" "contacto  formu" "contacto formu"; }
+  grid-template-columns: 50% 50%;
+  grid-template-rows: min-content min-content;
+  grid-template-areas: "titulo  tituto" "contacto formu2" "contacto formu2" "formu fomru"; }
 
 .gridContacto h1 {
   grid-area: titulo; }
@@ -84,6 +94,12 @@ label {
 .formulario {
   grid-area: formu; }
 
+.contacto {
+  grid-area: contacto; }
+
+.formulario2 {
+  grid-area: formu2; }
+
 /* Media Queries contacto  */
 @media screen and (max-width: 600px) {
   body {
@@ -91,7 +107,7 @@ label {
   .gridContacto {
     display: flex;
     flex-direction: column;
-    grid-template-areas: "titulo titulo" "contacto formu" "contacto formu"; } }
+    grid-template-areas: "titulo titulo" "contacto formu2" "contacto formu2" "formu formu2"; } }
 
 @media screen and (min-width: 600px) {
   body {
@@ -99,7 +115,7 @@ label {
   .gridContacto {
     display: flex;
     flex-direction: column;
-    grid-template-areas: "titulo  tituto" "contacto  formu" "contacto formu"; } }
+    grid-template-areas: "titulo titulo" "contacto formu2" "contacto formu2" "formu formu2"; } }
 
 /*pages - futbol*/
 .tablaFutbol {
@@ -108,7 +124,8 @@ label {
   padding: 2px;
   margin: 5px;
   width: 350px;
-  height: 940px; }
+  height: 940px;
+  box-shadow: 10px 5px 5px black; }
 
 .reducido {
   background: linear-gradient(to right, blue, white);
@@ -117,7 +134,8 @@ label {
   padding: 2px;
   margin: 5px;
   width: 400px;
-  height: 240px; }
+  height: 240px;
+  box-shadow: 10px 5px 5px black; }
 
 .instanciaFinal {
   background: linear-gradient(to right, blue, white);
@@ -126,7 +144,8 @@ label {
   padding: 2px;
   margin: 5px;
   width: 400px;
-  height: 850px; }
+  height: 850px;
+  box-shadow: 10px 5px 5px black; }
 
 /* grid Futbol */
 .futbol {
@@ -159,7 +178,8 @@ label {
   padding: 1px;
   margin: 1px;
   width: 460px;
-  height: 900px; }
+  height: 900px;
+  box-shadow: 10px 5px 5px black; }
 
 /* grid plantel profesinal */
 .equipo {
@@ -187,7 +207,8 @@ label {
   padding: 2px;
   margin: 10px;
   width: 210px;
-  height: 350px; }
+  height: 370px;
+  box-shadow: 10px 5px 5px black; }
 
 .hojaEnBlanco {
   background: linear-gradient(to right, blue, white);
@@ -195,7 +216,8 @@ label {
   padding: 2px;
   margin: 10px;
   width: 270px;
-  height: 470px; }
+  height: 490px;
+  box-shadow: 10px 5px 5px black; }
 
 /* grid Multimedia */
 .cancionesLlego {
@@ -273,7 +295,8 @@ label {
   padding: 2px;
   margin: 5px;
   width: 380px;
-  height: 300px; }
+  height: 300px;
+  box-shadow: 10px 5px 5px black; }
 
 .nuevosProfesionales {
   background: linear-gradient(to right, blue, white);
@@ -281,7 +304,8 @@ label {
   padding: 2px;
   margin: 2px;
   width: 340px;
-  height: 340px; }
+  height: 340px;
+  box-shadow: 10px 5px 5px black; }
 
 /* grid  Furbol Juvenil */
 .categorias {
@@ -303,6 +327,19 @@ label {
   .categorias {
     display: flex;
     flex-direction: column; } }
+
+body {
+  color: black;
+  font-family: arial, verdana, sans-serif; }
+
+h1 {
+  background-color: #6B6;
+  color: #55A;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4em;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 12px; }
 
 /*Index*/
 .nuevosSocios {

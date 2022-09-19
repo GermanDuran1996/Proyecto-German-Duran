@@ -1,9 +1,7 @@
 
-
 h1 {
     color: black;
 }
-
 h2 {
     color: black;
 }
@@ -14,6 +12,7 @@ h3 {
 
 body {
     background-image: url(../img/esponja-de-cosech.png);
+    font-family: arial, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -52,7 +51,19 @@ header {
 }
 
 
+$color-primario: #55A;
+$color-secundario: #6B6;
+$color-texto: black;
 
+$espaciado-estandar: 10px;
+$espaciado-doble: 20px;
+
+$fuente-normal: 1em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1.4em;
+
+$tipografia-general: arial, verdana, sans-serif;
+$tipografia-alternativa: 'Times New Roman', Times, serif;
 
 @import "contacto";
 

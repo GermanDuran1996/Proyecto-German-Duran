@@ -54,6 +54,7 @@
 
 
   <section class="gridContacto">
+  
     <h1 class="tituloContacto" style="text-align: center ;">Medios de Contacto</h1>
     <div class="contacto">
       <li>Telefono sede social (Guido y paz):
@@ -73,7 +74,7 @@
       <main>
         <form>
           <fieldset>
-            <legend>Formulario de Contacto</legend>
+            <legend>Contacto Institucional </legend>
             <label for="nombre">Nombre</label>
             <input id="nombre" type="text">
             <br><br>
@@ -91,11 +92,88 @@
       </main>
 
     </div>
+
+
+    <div class="formulario2">
+    <legend>Ingrese los datos en el siguiente formulario: </legend>
+      <form class="validable redondear_3 mascara clearfix" method="post" action="/contacto/formulario/enviar"
+        enctype="multipart/form-data">
+        <fieldset>
+
+          <div class="bloque flotar_izq tipo"><label class="tema simple" for="seccion">Área</label>
+            <div class="campo uk-form-select uk-active" data-uk-form-select=""><i
+                class="uk-icon-caret-down flotar_der"></i><span class="input capa">Prensa</span>
+              <select id="seccion" name="seccion" class="seleccionar requerido">
+                <option value="prensa">Prensa</option>
+                <option value="deportes">Deportes</option>
+                <option value="socios">Socios</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="bloque flotar_izq asunto impar"><label class="tema simple" for="datos_asunto">Asunto</label>
+            <div class="campo"><input name="datos_asunto" id="datos_asunto" placeholder="Motivo de la consulta"
+                value=""><span class="icono-etiqueta flotar_der"></span></div>
+          </div>
+
+          <div class="bloque flotar_izq nombre limpiar"><label class="tema simple" for="datos_nombre">Nombre
+              Completo</label><span class="asterisco redondear_x flotar_der"
+              title="Dato obligatorio / Ingrese sólo letras" data-uk-tooltip="">*</span>
+            <div class="campo"><input name="datos_nombre" id="datos_nombre" class="requerido letras"
+                placeholder="Nombre y Apellido" value=""><span class="icono-usuario flotar_der"></span></div>
+          </div>
+
+          <div class="bloque flotar_izq email impar"><label class="tema simple" for="datos_email">Correo
+              electrónico</label><span class="asterisco redondear_x flotar_der" title="Dato obligatorio"
+              data-uk-tooltip="">*</span>
+            <div class="campo"><input name="datos_email" id="datos_email" class="requerido email"
+                placeholder="Dirección de e-mail" value=""><span class="icono-contacto flotar_der"></span></div>
+          </div>
+
+          <div class="bloque flotar_izq telefono"><label class="tema simple" for="datos_telefono">Teléfono</label>
+            <div class="campo"><input name="datos_telefono" id="datos_telefono" placeholder="Número de teléfono"
+                value=""><span class="icono-telefono flotar_der"></span></div>
+          </div>
+
+          <div class="bloque flotar_izq res_web"></div>
+
+          <div class="bloque flotar_izq impar limpiar">
+            <label class="tema simple">¿Es socio de Quilmes?</label>
+            <div class="selectores">
+              <input name="datos_socio" id="datos_socio_si" value="Sí" type="radio" class="radio"
+                data-activar="datos_socio_nro"><label for="datos_socio_si"
+                class="si primero"><span><span></span></span>Sí</label>
+              <input name="datos_socio" id="datos_socio_no" value="No" type="radio" class="radio"
+                data-desactivar="datos_socio_nro"><label for="datos_socio_no"
+                class="no ultimo"><span><span></span></span>No</label>
+            </div>
+          </div>
+
+          <div class="bloque flotar_izq desactivo socio"><label class="tema simple" for="datos_socio_nro">Número de
+              socio
+              del Quilmes A. C.</label>
+            <div class="campo"><input name="datos_socio_nro" id="datos_socio_nro" placeholder="Número de socio" value=""
+                disabled="disabled"><span class="icono-socio flotar_der"></span></div>
+          </div>
+
+          <div class="bloque flotar_izq mensaje doble"><label class="tema simple" for="datos_mensaje">Mensaje /
+              Comentario</label><span class="asterisco redondear_x flotar_der" title="Dato obligatorio"
+              data-uk-tooltip="">*</span>
+            <div class="campo"><textarea name="datos_mensaje" id="datos_mensaje" class="requerido"></textarea><span
+                class="icono-declara flotar_der"></span></div>
+          </div>
+
+        </fieldset>
+        <input type="hidden" name="accion" value="contacto">
+        <button type="submit" class="boton mayusculas flotar_der">Enviar</button>
+        <p class="incompleto oculto flotar_izq"><span class="icono-atencion chico icono-texto txt_sep_der"></span>Debe
+          completar todos los datos requeridos <span class="asterisco redondear_x capa">*</span>.</p>
+        <span class="banda"></span>
+      </form>
+    </div>
+
+
   </section>
-
-
-
-
 
 
   <footer>

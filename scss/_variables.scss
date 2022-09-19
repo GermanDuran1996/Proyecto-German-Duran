@@ -1,0 +1,17 @@
+body {
+    color: $color-texto;
+    font-family: $tipografia-general;
+  }
+  
+  h1 {
+    background-color: $color-secundario;
+    color: $color-primario;
+    font-family: $tipografia-alternativa;
+    font-size: $fuente-grande;
+    padding: $espaciado-estandar;
+    text-transform: uppercase;
+    border-radius: 12px;
+  }
+
+
+  
