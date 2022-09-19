@@ -2,7 +2,6 @@
 
 .categoriasInferiores {
     background: linear-gradient(to right, blue , white);
-   /* background-color: aqua; */
    border: 1px black solid;
    padding: 2px;
    margin: 5px;
@@ -12,7 +11,7 @@
 
 .nuevosProfesionales {
     background: linear-gradient(to right, blue , white);
-   /* background-color: aqua; */
+
    border: 1px black solid;
    padding: 2px;
    margin: 2px;
@@ -56,34 +55,3 @@
    
 }
 
-/* @media screen and (min-width: 790px) {
-   body {
-       background-color: aquamarine;
-   }
-   .categorias {
-       display: flex;
-       flex-direction: column;
-       grid-template-areas: 
-       "tabla"
-       "jugadores";
-   }
-
-
-
-}
-
-/*
-@media screen and (min-width: 1124px) {
-   body {
-       background-color: blue;
-   }
-   .categorias {
-       display: grid;
-       grid-template-columns: 50% 50%;
-       grid-template-rows: min-content min-content;
-       grid-template-areas: 
-       "tabla jugadores"
-       "tabla jugadores";
-   }
-   
-} */

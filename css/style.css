@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1 {
   color: black; }
 
@@ -9,7 +8,7 @@ h3 {
   color: black; }
 
 body {
-  background-image: url(../img/56269936-resumen-de-plata-gris-de-fondo-centro-blanco-borde-más-oscuro-con-la-textura-de-la-esponja-de-cosech.webp); }
+  background-image: url(../img/esponja-de-cosech.png); }
 
 header {
   background-color: none;
@@ -30,16 +29,6 @@ header {
     header a:hover {
       background-color: white; }
 
-/* 
-nav {
-    display: flex;
-    margin-left: 50px;
-    border: black solid;
-    padding: 2px;
-    margin: 3px;
-    width: 700px;
-    height: 20px;
-} */
 /* Contacto */
 legend {
   color: black; }
@@ -112,25 +101,9 @@ label {
     flex-direction: column;
     grid-template-areas: "titulo  tituto" "contacto  formu" "contacto formu"; } }
 
-/*  @media screen and (min-width: 1124px) {
-      body {
-          background-color: blue;
-      }
-      .gridContacto {
-          display: grid;
-          grid-template-columns: 50% 25% 25%;
-          grid-template-rows: min-content min-content min-content;
-          grid-template-areas: 
-          "titulo  tituto"
-          "redes  contacto"
-          "escudo escudo";
-      }
-      
-  } */
 /*pages - futbol*/
 .tablaFutbol {
   background: linear-gradient(to right, blue, white);
-  /*background-color: aqua;*/
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
@@ -179,41 +152,9 @@ label {
     display: flex;
     flex-direction: column; } }
 
-/* @media screen and (min-width: 480px) {
-    body {
-        background-color: aquamarine;
-    }
-    .futbol {
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "tabla reducido"
-        "tabla reducido"
-        "final";
-    }
-
-
-}
-
-@media screen and (min-width: 1124px) {
-    body {
-        background-color: blue;
-    }
-    .futbol {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: min-content min-content;
-        grid-template-areas: 
-        "tabla reducido"
-        "tabla final"
-        "tabla final";
-    }
-    
-} */
 /*Plantel profecional*/
 .plantel {
   background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
   border: 1px black solid;
   padding: 1px;
   margin: 1px;
@@ -239,35 +180,9 @@ label {
     display: flex;
     flex-direction: column; } }
 
-/* @media screen and (min-width: 480px) {
-    .equipo {
-        display: flex;
-        flex-direction: column ;
-        grid-auto-rows: min-content ;
-        grid-template-areas:
-        "plantel"
-        "plantel"
-        "atlanta";
-}
-
-}
-
-@media screen and (min-width: 1124px) {
-    .equipo {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: min-content min-content;
-        grid-template-areas:
-        "plantel atlanta"
-        "plantel atlanta"
-        "plantel atlanta";
-}
-
-} */
 /*Multimedia*/
 .llegoLaBanda {
   background: linear-gradient(to right, blue, white);
-  /* background-color: wheat; */
   border: 1px black solid;
   padding: 2px;
   margin: 10px;
@@ -276,7 +191,6 @@ label {
 
 .hojaEnBlanco {
   background: linear-gradient(to right, blue, white);
-  /* background-color: wheat; */
   border: 1px black solid;
   padding: 2px;
   margin: 10px;
@@ -355,7 +269,6 @@ label {
 /* Futbol Juvenil */
 .categoriasInferiores {
   background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
@@ -364,7 +277,6 @@ label {
 
 .nuevosProfesionales {
   background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
   border: 1px black solid;
   padding: 2px;
   margin: 2px;
@@ -392,41 +304,9 @@ label {
     display: flex;
     flex-direction: column; } }
 
-/* @media screen and (min-width: 790px) {
-   body {
-       background-color: aquamarine;
-   }
-   .categorias {
-       display: flex;
-       flex-direction: column;
-       grid-template-areas: 
-       "tabla"
-       "jugadores";
-   }
-
-
-
-}
-
-/*
-@media screen and (min-width: 1124px) {
-   body {
-       background-color: blue;
-   }
-   .categorias {
-       display: grid;
-       grid-template-columns: 50% 50%;
-       grid-template-rows: min-content min-content;
-       grid-template-areas: 
-       "tabla jugadores"
-       "tabla jugadores";
-   }
-   
-} */
 /*Index*/
 .nuevosSocios {
   background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
@@ -435,7 +315,6 @@ label {
 
 .fechas {
   background: linear-gradient(to right, blue, white);
-  /* background-color: aqua; */
   border: 1px black solid;
   padding: 2px;
   margin: 5px;
@@ -461,33 +340,3 @@ label {
     flex-direction: column; }
   .googleMaps {
     display: none; } }
-
-/*
-@media screen and (min-width: 480px) {
-    .actualidad {
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "partidos"
-        "socios";
-    }
-    .googleMaps{
-        display: none;
-    }
-    
-}
-
-@media screen and (min-width: 1124px) {
-    .actualidad {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: min-content min-content;
-        grid-template-areas: 
-        "partidos socios"
-        "partidos socios";
-    }
-    .googleMaps {
-        display: block;
-    }
-
-} */
